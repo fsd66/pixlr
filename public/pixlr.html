@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pixlr</title>
+    <link rel="stylesheet" href="static/css/pixlr.css" />
+    <script src="static/js/pixlr.js"></script>
+</head>
+
+<body>
+    <h1>Pixlr</h1>
+    <div id="pixlr">
+        <div id="pixlr-canvas-div">
+            <canvas id="pixlr-canvas"></canvas>
+        </div>
+
+        <div id="pixlr-ui" class='display-none'>
+            <div id="pixlr-color-preview">
+                <div id="pixlr-color-preview-label">
+                    Selected Color:
+                    <span id="pixlr-color-preview-text"></span>
+                </div>
+                <div id="pixlr-color-preview-box" class="color-swatch"></div>
+            </div>
+            <div id="pixlr-palette">
+                <div>
+                    Palette:
+                </div>
+                <div id="pixlr-palette-list">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="pixlr-disconnect-modal" class='display-none'>
+            <div>
+                <h1>
+                    Connection to Pixlr has been lost!
+                    Please refresh to connect!
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
