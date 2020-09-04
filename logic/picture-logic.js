@@ -41,8 +41,8 @@ const createEmptyPicture = async (width, height) => {
 }
 
 const createNewCurrentPicture = async () => {
-    const width = process.env.PICTURE_WIDTH | 32;
-    const height = process.env.PICTURE_HEIGHT | 32;
+    const width = process.env.PICTURE_WIDTH;
+    const height = process.env.PICTURE_HEIGHT;
 
     const picture = await createEmptyPicture(width, height);
     await setCurrentPictureId(picture._id);
